@@ -1,16 +1,20 @@
 {
-  "name": "quick-results",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.13"
-  }
+	"name": "quick-results",
+	"type": "module",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@steffo/bluelib": "^9.1.0",
+		"classnames": "^2.5.1",
+		"js-base64": "^3.7.7",
+		"next": "14.2.13",
+		"react": "^18",
+		"react-dom": "^18"
+	}
 }
