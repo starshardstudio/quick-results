@@ -8,15 +8,19 @@ export default function Home() {
 	const player = Base64.decode(window.location.hash)
 	
 	return player && <>
-		<h2>
+		<h1>
 			{player}
-		</h2>
-		<div className={"chapter-1"}>
+		</h1>
+		<main className={"chapter-1"}>
+			<h2>Gironi</h2>
 			<Matchbox number={"1"} player={player}/>
 			<Matchbox number={"2"} player={player}/>
 			<Matchbox number={"3"} player={player}/>
 			<Matchbox number={"4"} player={player}/>
 			<Matchbox number={"5"} player={player}/>
-		</div>
+			<h2>Playoff</h2>
+			<Matchbox number={"6"} player={player}/>
+			<Matchbox number={"7"} player={player}/>
+		</main>
 	</>
 }

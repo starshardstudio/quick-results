@@ -46,7 +46,7 @@ export function Matchbox({number, player}) {
 			</h3>
 			<label>
 				<span>Avversario</span>
-				<input type={"text"} placeholder={"Gandalf"} value={opponent} onChange={e => setOpponent(e.target.value)}/>
+				<input type={"text"} placeholder={""} value={opponent} onChange={e => setOpponent(e.target.value)}/>
 				<span/>
 			</label>
 			<div className={"form-flex-choice"}>
@@ -66,7 +66,11 @@ export function Matchbox({number, player}) {
 				</div>
 				<span/>
 			</div>
-			<label>
+			<label
+				className={classNames({
+					"fade": submitted || result === "" || opponent === ""
+				})}
+			>
 				<span/>
 				<input type={"submit"} value={"Invia"} disabled={submitted || result === "" || opponent === ""}/>
 				<span/>

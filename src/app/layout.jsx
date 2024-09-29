@@ -17,12 +17,7 @@ export default function RootLayout({ children }) {
 				<title>Shards of Middle-Earth</title>
 			</head>
 			<body className={"layout-center"}>
-				<h1>
-					Shards of Middle-Earth
-				</h1>
-				<main>
-					{children}
-				</main>
+				{children}
 				<footer>
 					© {new Date().getFullYear()} Stefano Pigozzi | <Link href={"https://github.com/starshardstudio/quick-results"}>Codice sorgente</Link>
 				</footer>
