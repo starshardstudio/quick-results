@@ -2,10 +2,13 @@
 
 import { Matchbox } from "@/components/matchbox.jsx";
 import { Base64 } from "js-base64";
+import { useSearchParams } from "next/navigation";
 
 
 export default function Home() {
-	const player = Base64.decode(window.location.hash)
+	const sp = useSearchParams()
+	
+	const player = Base64.decode(sp.get("p") ?? "")
 	
 	return player && <>
 		<h1>
